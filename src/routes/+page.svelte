@@ -43,5 +43,6 @@
     padding: 10px;
     color: black;
     font-weight: bolder;
+    position: fixed;
   }
 </style>
