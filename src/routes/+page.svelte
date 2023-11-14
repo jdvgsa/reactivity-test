@@ -1,30 +1,11 @@
 <script>
   import MyChecklist from "../lib/components/MyChecklist.svelte"
-
-  // declaring daily tasks array (redundant code)
-  // let dailyTasks = [
-  //   {task: "Exercise"},
-  //   {task: "Buy Groceries"},
-  //   {task: "Walk Dog"},
-  // ];
-  
 </script>
 
-<h1>Reactivity and Events</h1>
+<h1>Assignment 6</h1>
+<h2>My Svelte Checklist App</h2>
 
-
-<!-- <h2><strong>Daily Tasks123</strong></h2>
-rendering daily tasks array
-<main>
-  {#each dailyTasks as tasks}
-    <ul>
-      <li>{tasks.task}</li>
-    </ul>
-  {/each}
-</main> -->
-
-
-<div class="app">
+<div>
 <MyChecklist />
 </div>
 
@@ -33,22 +14,22 @@ rendering daily tasks array
 
 
 <style>
+  
   h1 {
     display: flex;
     justify-content: center;
+    padding: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
-  .app {
-    display: flex;
-    justify-content: space-evenly;
+  h2 {
+    display:flex;
+    justify-content: center;
+    padding: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-
-  
+    
 </style>
 
 
 
-
-<!-- <span>
-  <MyArrayComponent {...MyArrayComponent} />
-</span> -->

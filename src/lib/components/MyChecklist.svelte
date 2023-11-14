@@ -24,9 +24,9 @@
     myDailyTasks = myDailyTasks; // svelte is unaware of what splice does to array, this syntax allows myDailyTasks to be updated. 
   }
 </script>
-
+<section>
 <div>
-  <h3>My Svelte Checklist Application</h3>
+  <h3>Add Tasks</h3>
   <div>
     <input type="text" bind:value={textInput}>
     <button on:click={addDailyTasks}>Add</button>
@@ -52,19 +52,67 @@
   </div>
 </div>
 {/each}
+</section>
 
-<!-- <style>
-  input {
-    display: flex;
+<style>
+  :global(body) {
+    background-color: antiquewhite; 
+    
+  }
+
+  section {
+    background-color: rosybrown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 400px;
+    margin: auto;
     padding: 1rem;
-    margin-right: 8px;
-    border: none;
-    background-color: antiquewhite;
+  }
+
+  div {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    color: #333;
     text-align: center;
+    padding-right: 1rem;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    margin-right: 8px;
   }
 
   button {
     padding: 0.5rem;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 0.25rem;
   }
+
+  button:hover {
+    background-color: green;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  p {
+    display: inline;
+    margin: 0;
+    padding-left: 4px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
  
-</style> -->
+</style>
