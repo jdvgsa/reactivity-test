@@ -44,5 +44,7 @@
     color: black;
     font-weight: bolder;
     position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 </style>
