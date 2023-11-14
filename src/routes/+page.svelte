@@ -1,6 +1,5 @@
 <script>
-  // import MyArrayComponent from "../lib/components/MyArrayComponent.svelte";
-  // import myDailies from "..lib/data.js";
+  import MyChecklist from "../lib/components/MyChecklist.svelte"
 
   // declaring daily tasks array
   let dailyTasks = [
@@ -22,7 +21,11 @@
   {/each}
 </main>
 
+<div class="container">
+  to do app
+</div>
 
+<MyChecklist />
 
 
 
@@ -33,7 +36,18 @@
     display: flex;
     justify-content: center;
   }
+
+  .container {
+    width: 750px;
+    background-color: cyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
 </style>
+
+
+
+
 <!-- <span>
   <MyArrayComponent {...MyArrayComponent} />
 </span> -->
