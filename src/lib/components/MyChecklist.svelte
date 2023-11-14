@@ -1,6 +1,4 @@
-<!-- <svelte:head>
-  <script src="htpps://cdn.tailwindcss.com"></script>
-</svelte:head> -->
+
 
 <script>
   let myDailyTasks = [
@@ -57,6 +55,8 @@
 <style>
   :global(body) {
     background-color: antiquewhite; 
+    margin: 0;
+    padding: 0;
     
   }
 
