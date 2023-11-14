@@ -28,6 +28,7 @@
     justify-content: center;
     padding: 0 auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
   }
 
   h2 {
