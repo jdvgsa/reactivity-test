@@ -4,15 +4,15 @@
 
 <script>
   let myDailyTasks = [
-    // {task: "Study Javascript", editing: false, checked: true},
-    // {task: "Do Homework", editing: false, checked: false},
-    // {task: "Cook Dinner", editing: false, checked: false},
-  ];   // this will be the array of my daily tasks
+    {task: "Study Javascript", editing: false, checked: true},
+    {task: "Do Homework", editing: false, checked: false},
+    {task: "Cook Dinner", editing: false, checked: false}
+  ];   // this will be the initial array rendered of my daily tasks
 
-  let textInput = " ";
+  let textInput = "";
 
   function addDailyTasks() {
-  myDailyTasks = [...myDailyTasks, { task: textInput, editing: false, checked: false }]
+  myDailyTasks = [...myDailyTasks, { task: textInput, editing: false, checked: false }];
   }
 
   function setEditing(i, isEditing) {
@@ -37,10 +37,10 @@
 
 <div>
   {#if tasks.editing}
-    <input type="text" bind:value={tasks.content}>
+    <input type="text" bind:value={tasks.task}>
   {:else}
-  <input type="checkbox" bind:checked={tasks.checked}>
-  <h4>{tasks.content}</h4>
+    <input type="checkbox" bind:checked={tasks.checked}>
+    <p>{tasks.task}</p>
   {/if}
   <div>
     {#if tasks.editing}
@@ -53,7 +53,7 @@
 </div>
 {/each}
 
-<style>
+<!-- <style>
   input {
     display: flex;
     padding: 1rem;
@@ -67,4 +67,4 @@
     padding: 0.5rem;
   }
  
-</style>
+</style> -->
