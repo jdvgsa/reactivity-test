@@ -25,7 +25,7 @@ The search term I used was not great but it was ["How to reset a page Javascript
 
 I then refined my search a bit by adding the keyword ["stackoverflow"] at the end of my search which finally gave me this link [https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click].
 
-Through the answers provided, I was able to take the sample code
+Through the answers provided, I was able to take the sample code:              
 /**
  function refreshPage() {
  window.location.reload();
