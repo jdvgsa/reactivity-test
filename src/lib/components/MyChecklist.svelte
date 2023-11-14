@@ -6,7 +6,7 @@
   let myDailyTasks = [
     {task: "Study Javascript", editing: false, checked: true},
     {task: "Do Homework", editing: false, checked: false},
-    {task: "Cook Dinner", editing: false, checked: false}
+    {task: "Cook Dinner", editing: false, checked: true}
   ];   // this will be the initial array rendered of my daily tasks
 
   let textInput = "";
@@ -26,7 +26,7 @@
 </script>
 <section>
 <div>
-  <h3>Add Tasks</h3>
+  <h3>Add Chores!</h3>
   <div>
     <input type="text" bind:value={textInput}>
     <button on:click={addDailyTasks}>Add</button>
@@ -73,9 +73,10 @@
   }
 
   h3 {
-    color: #333;
+    color: black;
     text-align: center;
     padding-right: 1rem;
+    font-size: 15px;
   }
 
   input[type="text"] {
@@ -86,7 +87,7 @@
   button {
     padding: 0.5rem;
     cursor: pointer;
-    background-color: cadetblue;
+    background-color: royalblue;
     color: white;
     border: none;
     border-radius: 10px;
@@ -94,7 +95,7 @@
   }
 
   button:hover {
-    background-color: green;
+    background-color: rgba(15, 175, 31, 0.781)
   }
 
   input[type="checkbox"] {

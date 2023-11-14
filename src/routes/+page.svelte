@@ -1,5 +1,6 @@
 <script>
   import MyChecklist from "../lib/components/MyChecklist.svelte"
+  import Reset from "../lib/components/Reset.svelte";
 </script>
 
 <h1>Assignment 6</h1>
@@ -9,8 +10,15 @@
 <MyChecklist />
 </div>
 
+<div>
+  <Reset />
+</div>
 
+<p><br></p>
 
+<footer>
+  <p>&copy; 2023 John Dagsa 262 Svelte Assignment</p>
+</footer>
 
 
 <style>
@@ -29,7 +37,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
     
+  footer {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+  }
 </style>
-
-
-
